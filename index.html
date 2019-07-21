@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Shadowrocket（小火箭）在线安装" />
+	<meta name="keywords" content="Shadowrocket" />
+	<title>Shadowrocket（小火箭）在线安装 - Shadowsocks-Help</title>
+    <link rel="shortcut icon" href="/logo.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/my.css" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+			<div class="topbread" style="margin-bottom: 20px;">
+		    	<div class="container">
+		        	<h1 class="text-center">Shadowrocket（小火箭）</h1>
+                 
+		    	</div>
+			</div>
+			<div style="margin-top:70px; margin-bottom: 20px;">
+		        <div style="text-align:center;">
+		  			<div class="polaroid">
+                        <div class="logo">
+                            <img src="/assets/images/icon.jpg" class="img-circle" width="120" height="120" />
+                        </div>
+                    </div>
+		            <ul class="breadcrumb" id="ul">
+		                <li>Version: 2.1.23</li>
+		            	<li>Size: 16.6 MB</li>
+					</ul>
+		            <div style="padding-top:20px;">
+                        <div class="id" id="id" style="display:none;">
+							<div class="panel panel-default">
+								<div class="panel-body" style="text-align:center;">
+        							<p>首次安装需用下面账号登录</p>
+                                    <p>账号：4SSGIT@Gmail.com</p>
+                                    <p>密码：4ssORG1234</p>
+			            <p>点击安装后HOME返回桌面查看</p>
+                                    <p>解锁可登录后选择邮件解锁</p>
+								</div>
+							</div>
+                      	</div>
+		                <span id="checkinfo">
+		                    <a href="itms-services://?action=download-manifest&url=https://shadowsocks-help.github.io/ios/ipa.plist" class="btn btn-success btn-lg btn-circle" id="uaApp">在线安装</a>
+		                    <div class="uatip" id="uaTip">
+								<span class="uatip-icon"></span>
+								<p class="uatip-txt">点击右上角<br/>选择在Safari中打开</p>
+							</div>
+		                </span>
+		            </div>
+		        </div>
+                <br/>
+			</div>
+		  
+			<div class="col-md-8 col-md-offset-2">
+		        <hr class="devider devider-dotted">
+		    </div>
+	        <div class="col-md-8 col-md-offset-2">
+	            <div class="text-center">
+                <p>Designed to protect your Internet traffic. </p>
+
+               </p>
+              </div>
+	        </div>
+        </div>
+    </div>
+	<div class="footer">
+        <div class="text-center">
+             ©&nbsp;2015-2019 <a href="https://shadowsocks-help.github.io/ios/" target="blank">Shadowrocket</a>
+		<a href="https://shadowsocks-help.github.io/Shadowsocks/wiki" target="blank">Help</a>
+		                         
+        </div>
+	</div>
+<script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
+<script>
+	function weixinTip(ele){
+		var ua = navigator.userAgent;
+		var Browser = /Safari/.test(ua) && !/Chrome/.test(ua);
+		if(Browser == 0){
+			ele.onclick=function(e){
+				window.event? window.event.returnValue = false : e.preventDefault();
+				document.getElementById('uaTip').style.display='block';
+			}
+		} else {
+			$("#uaApp").click(function () {
+				$("#uaApp").attr("style","display:none;");
+                $("#ul").attr("style","display:none;");
+                $("#id").attr("style","display:block;");
+            });
+        }
+	}
+	var btn1 = document.getElementById('uaApp');
+	weixinTip(btn1);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134347907-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134347907-2');
+</script>
+</body>
+</html>
