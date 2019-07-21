@@ -10,7 +10,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>https://shadowsocks-help.github.io/ios/Shadowrocket.ipa</string>
+                        <string>https://shadowsocks-help.github.io/ios/Shadowrocket 2.1.30.ipa</string>
                     </dict>
                 </array>
                 <key>metadata</key>
@@ -18,7 +18,7 @@
                     <key>bundle-identifier</key>
                      <string>com.liguangming.Shadowrocket</string>
                      <key>bundle-version</key>
-                    <string>2.1.23</string>
+                    <string>2.1.30</string>
                     <key>kind</key>
                     <string>software</string>
                     <key>title</key>
